@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngx-captcha';
+
+  checkValidity(data){
+    console.log(data)
+  }
 }

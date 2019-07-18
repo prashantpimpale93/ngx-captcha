@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-pmp-captcha": [
+        "dist/ngx-pmp-captcha"
+      ],
+      "ngx-pmp-captcha/*": [
+        "dist/ngx-pmp-captcha/*"
+      ]
+    }
   }
 }

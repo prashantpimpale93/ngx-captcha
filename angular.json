@@ -121,6 +121,41 @@
           }
         }
       }
+    },
+    "ngx-pmp-captcha": {
+      "root": "projects/ngx-pmp-captcha",
+      "sourceRoot": "projects/ngx-pmp-captcha/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-pmp-captcha/tsconfig.lib.json",
+            "project": "projects/ngx-pmp-captcha/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-pmp-captcha/src/test.ts",
+            "tsConfig": "projects/ngx-pmp-captcha/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-pmp-captcha/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-pmp-captcha/tsconfig.lib.json",
+              "projects/ngx-pmp-captcha/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-captcha"

@@ -1,0 +1,6 @@
+<div id="container" [style.height.px]="height" [style.width.px]="width">
+  <div id="captchaContainer">
+    <div class="jack">{{randomText}}</div>
+    <input class="fill-width" type="text" [(ngModel)]="enteredText" (ngModelChange)="onTextType()">
+  </div>
+</div>
